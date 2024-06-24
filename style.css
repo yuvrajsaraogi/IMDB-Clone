@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/* :root{
+    --primary-color:black;
+
+} */
+
+body{
+    background-color: black;
+    font-family: 'Poppins','sans-serif';
+    margin: 0;
+    /* color: white; */
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+
+header span{
+    display: flex;
+    align-items: center;
+}
+
+header span a{
+    text-decoration: none;
+    color: white;
+    padding: 0 3rem 0 3rem;
+    cursor: pointer;
+}
+
+header span a:hover{
+    color: red;
+}
+
+.header__icon {
+    width: 80px;
+    cursor: pointer;
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: white;
+    font-family: inherit;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie{
+    width: 250px;
+    margin: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgb(99, 99, 99);
+    transition: transform .5s ease-out;
+    position: relative;
+    border-radius: 10px;
+}
+
+.movie img{
+    width: 100%;
+}
+
+.movie:hover{
+    transform: scale(1.1);
+    z-index: 1000;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+.movie-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem 0.5rem;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    padding: 0.25rem 0.5rem;
+    font-weight: bold;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+}
+
+.head {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-size: xxx-large;
+    margin-left: 5rem;
+}
+
+#tags{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10px auto;
+}
+
+.tag{
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50px;
+    margin: 5px 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tag:hover{
+    color: red;
+}
+
+.tag.highlight{
+    background-color: #4d4040;
+}
+.no-results{
+    color: white;
+}
+
+.pagination{
+    display: flex;
+    margin: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.page{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.page.disabled{
+    cursor: not-allowed;
+    color: grey;
+}
+
+.current{
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 5px solid #4d4040;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.movie1 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.movie-detail{
+    width: 80%;
+    margin: 22px 149px;
+    display: grid;
+    align-items: center;
+}
+
+.movie-detail img{
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+    object-position: 0 35%;
+
+}
+
+.det {
+    align-items: center;
+    width: 75%;
+    display: flex;
+    position: relative;
+    bottom: 225px;
+}
+
+.movie__detailLeft {
+    margin-right: 30px;
+}
+
+.movie__posterBox img{
+    width:300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie__detailRight {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content:space-between ;
+}
+
+.movie__detailRightTop > div{
+    text-shadow: 0px 0px 5px #000000;
+    margin-bottom: .5rem;
+    font-weight: normal;
+}
+
+.movie__name {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.synopsisText {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.synopsisText > div:last-of-type {
+    margin-left: auto;
+}
+
+.mr{
+    margin-top: 300px;
+}
+
+
+.movie__genre {
+    padding: .5rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+
+.movie-h{
+    display: flex;
+    align-items: center;
+}
+
+.movie-h button{
+    margin-left: 35px;
+}
+
+.mdhead{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+.mdhead:hover{
+    color: red;
+}
