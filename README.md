@@ -1,2 +1,1 @@
-# IMDB-Clone.github.io
-## IMDB-Clone
+# IMDB-Clone
